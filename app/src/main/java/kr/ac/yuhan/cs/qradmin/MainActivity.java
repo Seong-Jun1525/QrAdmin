@@ -80,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
     private NeumorphImageView setting;
     private NeumorphImageView changeMode;
 
+
+    private ViewFlipper vFlipper;
+
     // Basic BackgroundColor
     private int backgroundColor;
     private int mainBackgroundColor = Color.rgb(236, 240, 243);
@@ -101,8 +104,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         // ViewFlipper Setting
-        final ViewFlipper vFlipper;
-        vFlipper = (ViewFlipper) findViewById(R.id.viewFlipper1);
+        vFlipper = findViewById(R.id.viewFlipper1);
 
         // Main Layout Setting
         LinearLayout main = findViewById(R.id.main);
@@ -115,45 +117,45 @@ public class MainActivity extends AppCompatActivity {
         mainBackgroundColor = ((ColorDrawable) backgroundDrawable).getColor();
 
         // MainActivity Header Id
-        setting = (NeumorphImageView) findViewById(R.id.setting);
-        changeMode = (NeumorphImageView) findViewById(R.id.darkMode);
+        setting = findViewById(R.id.setting);
+        changeMode = findViewById(R.id.darkMode);
 
         // Admin MainPage ImageView Id
-        adminList = (ImageView) findViewById(R.id.adminList);
-        call = (ImageView) findViewById(R.id.call);
-        adminLogin = (ImageView) findViewById(R.id.adminLogin);
-        adminSchedule = (ImageView) findViewById(R.id.adminSchedule);
+        adminList = findViewById(R.id.adminList);
+        call = findViewById(R.id.call);
+        adminLogin = findViewById(R.id.adminLogin);
+        adminSchedule = findViewById(R.id.adminSchedule);
 
         // MainActivity CardView & Footer Id
-        mainCardView = (NeumorphCardView) findViewById(R.id.mainCardView);
-        footer_menu = (NeumorphCardView) findViewById(R.id.footer_menu);
+        mainCardView = findViewById(R.id.mainCardView);
+        footer_menu = findViewById(R.id.footer_menu);
 
         // User Management Page Id
-        input_searchId = (NeumorphCardView) findViewById(R.id.input_searchId);
-        memberSearchBtn = (NeumorphButton) findViewById(R.id.memberSearchBtn);
-        memberListCardView = (NeumorphCardView) findViewById(R.id.memberListCardView);
+        input_searchId = findViewById(R.id.input_searchId);
+        memberSearchBtn = findViewById(R.id.memberSearchBtn);
+        memberListCardView = findViewById(R.id.memberListCardView);
 
         // Payment List Id
-        paySearchBtn = (NeumorphButton) findViewById(R.id.paySearchBtn);
-        payListCardView = (NeumorphCardView) findViewById(R.id.payListCardView);
-        input_searchIdPay =(NeumorphCardView) findViewById(R.id.input_searchIdPay);
+        paySearchBtn = findViewById(R.id.paySearchBtn);
+        payListCardView =findViewById(R.id.payListCardView);
+        input_searchIdPay = findViewById(R.id.input_searchIdPay);
 
         // Product Register Page Id
-        input_productImage = (NeumorphCardView) findViewById(R.id.input_productImage);
-        input_productName = (NeumorphCardView) findViewById(R.id.input_productName);
-        input_productQuantity = (NeumorphCardView) findViewById(R.id.input_productQuantity);
-        input_productCategory = (NeumorphCardView) findViewById(R.id.input_productCategory);
-        input_productPrice = (NeumorphCardView) findViewById(R.id.input_productPrice);
-        createQRBtn = (NeumorphButton) findViewById(R.id.createQRBtn);
-        createProductBtn = (NeumorphButton) findViewById(R.id.createProductBtn);
-        memberSearchBtn = (NeumorphButton) findViewById(R.id.memberSearchBtn);
+        input_productImage = findViewById(R.id.input_productImage);
+        input_productName = findViewById(R.id.input_productName);
+        input_productQuantity = findViewById(R.id.input_productQuantity);
+        input_productCategory = findViewById(R.id.input_productCategory);
+        input_productPrice = findViewById(R.id.input_productPrice);
+        createQRBtn = findViewById(R.id.createQRBtn);
+        createProductBtn = findViewById(R.id.createProductBtn);
+        memberSearchBtn = findViewById(R.id.memberSearchBtn);
 
         // Footer Menu Icon Id
-        memberBtn = (NeumorphImageView) findViewById(R.id.memberBtn);
-        productBtn = (NeumorphImageView) findViewById(R.id.productBtn);
-        homeBtn = (NeumorphImageView) findViewById(R.id.homeBtn);
-        payHistoryBtn = (NeumorphImageView) findViewById(R.id.payHistoryBtn);
-        productPushBtn = (NeumorphImageView) findViewById(R.id.productPushBtn);
+        memberBtn = findViewById(R.id.memberBtn);
+        productBtn = findViewById(R.id.productBtn);
+        homeBtn = findViewById(R.id.homeBtn);
+        payHistoryBtn = findViewById(R.id.payHistoryBtn);
+        productPushBtn = findViewById(R.id.productPushBtn);
 
         // MainActivity Button BackgroundColor Setting
         createQRBtn.setBackgroundColor(btnColor);
@@ -162,10 +164,10 @@ public class MainActivity extends AppCompatActivity {
         paySearchBtn.setBackgroundColor(btnColor);
 
         // MainActivity Home Menu CardView Id
-        login = (NeumorphCardView) findViewById(R.id.login);
-        adminBtn = (NeumorphCardView) findViewById(R.id.adminBtn);
-        adminScheduleBtn = (NeumorphCardView) findViewById(R.id.adminScheduleBtn);
-        callBtn = (NeumorphCardView) findViewById(R.id.callBtn);
+        login = findViewById(R.id.login);
+        adminBtn = findViewById(R.id.adminBtn);
+        adminScheduleBtn = findViewById(R.id.adminScheduleBtn);
+        callBtn = findViewById(R.id.callBtn);
 
         // ListView Item onClickListener
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

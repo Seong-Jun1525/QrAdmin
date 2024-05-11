@@ -36,11 +36,11 @@ public class SettingActivity extends AppCompatActivity {
         backgroundView.setBackgroundColor(backgroundColor);
 
         // Setting CardViews
-        NeumorphCardView adminIDCardView = (NeumorphCardView) findViewById(R.id.adminIDCardView);
-        NeumorphCardView addAdminCardView = (NeumorphCardView) findViewById(R.id.addAdminCardView);
-        NeumorphCardView adminExitCardView = (NeumorphCardView) findViewById(R.id.adminExitCardView);
+        NeumorphCardView adminIDCardView = findViewById(R.id.adminIDCardView);
+        NeumorphCardView addAdminCardView = findViewById(R.id.addAdminCardView);
+        NeumorphCardView adminExitCardView = findViewById(R.id.adminExitCardView);
 
-        backBtn = (NeumorphImageView) findViewById(R.id.backBtn);
+        backBtn = findViewById(R.id.backBtn);
 
         if(modeValue == 1) {
             // Change FontColor

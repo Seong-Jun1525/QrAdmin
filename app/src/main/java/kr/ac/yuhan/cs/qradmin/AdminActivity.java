@@ -33,7 +33,7 @@ public class AdminActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_page);
 
-        LinearLayout adminListPage = (LinearLayout) findViewById(R.id.adminListPage);
+        LinearLayout adminListPage = findViewById(R.id.adminListPage);
 
         ListView listView = findViewById(R.id.listView);
 
@@ -54,10 +54,10 @@ public class AdminActivity extends AppCompatActivity {
         backgroundView.setBackgroundColor(backgroundColor);
 
         // Admin Page Id
-        backBtn = (NeumorphImageView) findViewById(R.id.backBtn);
-        adminListCardView = (NeumorphCardView) findViewById(R.id.adminListCardView);
-        editTextSearchAdminField = (NeumorphCardView) findViewById(R.id.editTextSearchAdminField);
-        adminSearchBtn = (NeumorphButton) findViewById(R.id.adminSearchBtn);
+        backBtn = findViewById(R.id.backBtn);
+        adminListCardView = findViewById(R.id.adminListCardView);
+        editTextSearchAdminField = findViewById(R.id.editTextSearchAdminField);
+        adminSearchBtn = findViewById(R.id.adminSearchBtn);
 
         // listView onItemClickListener
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

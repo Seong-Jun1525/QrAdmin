@@ -18,7 +18,7 @@ public class AdminFormActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_form);
-        LinearLayout adminFormPage = (LinearLayout) findViewById(R.id.adminFormPage);
+        LinearLayout adminFormPage = findViewById(R.id.adminFormPage);
 
         // Receives current mode value
         int modeValue = getIntent().getIntExtra("mode", 1);
@@ -31,14 +31,14 @@ public class AdminFormActivity extends AppCompatActivity {
         backgroundView.setBackgroundColor(backgroundColor);
 
         // AdminForm Page CardView content
-        NeumorphCardView adminAddCardView = (NeumorphCardView) findViewById(R.id.adminAddCardView);
-        NeumorphCardView editTextIdField = (NeumorphCardView) findViewById(R.id.editTextIdField);
-        NeumorphCardView editTextPwField = (NeumorphCardView) findViewById(R.id.editTextPwField);
-        NeumorphCardView editTextPositionField = (NeumorphCardView) findViewById(R.id.editTextPositionField);
-        NeumorphButton adminAddBtn = (NeumorphButton) findViewById(R.id.adminAddBtn);
+        NeumorphCardView adminAddCardView = findViewById(R.id.adminAddCardView);
+        NeumorphCardView editTextIdField = findViewById(R.id.editTextIdField);
+        NeumorphCardView editTextPwField = findViewById(R.id.editTextPwField);
+        NeumorphCardView editTextPositionField = findViewById(R.id.editTextPositionField);
+        NeumorphButton adminAddBtn = findViewById(R.id.adminAddBtn);
 
         // AdminForm Page Btn
-        backBtn = (NeumorphImageView) findViewById(R.id.backBtn);
+        backBtn = findViewById(R.id.backBtn);
 
         if(modeValue == 1) {
             // DarkMode
